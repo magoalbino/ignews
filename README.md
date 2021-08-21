@@ -27,4 +27,9 @@ Server Side Rendering
 - Static Site Generation:
 - - O next gera um html da página e evita fazer outra requisição ao servidor, independente de quantos usuários acessarem a página. Sendo que o tempo de atualização desse html é definido pelo react (getStaticProps)
 - - Serve apenas para informações estáticas, que é visualizada igualmente por todos os usuários
-- - O server side rendering é mais custoso para carregar a página, e por isso deve ser usado apenas em situações que tirem sua máxima vantagem
+- O server side rendering é mais custoso para carregar a página, e por isso deve ser usado apenas em situações que tirem sua máxima vantagem
+
+No Next, podemos criar uma pasta 'api' dentro de 'pages', e todo arquivo que estiver dentro desta pasta, será visto como uma rota do backend.
+Ou seja, funciona como uma api vinda do backend, pois roda justamente na camada intermediária de node do next, entre o react e o browser.
+Tudo isso funciona de forma 'serverless'.
+
