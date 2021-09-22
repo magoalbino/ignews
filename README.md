@@ -33,3 +33,6 @@ No Next, podemos criar uma pasta 'api' dentro de 'pages', e todo arquivo que est
 Ou seja, funciona como uma api vinda do backend, pois roda justamente na camada intermediária de node do next, entre o react e o browser.
 Tudo isso funciona de forma 'serverless'.
 
+No next, o componente MyApp (que fica no arquivo _app.tsx) é o que engloba a aplicação, e é renderizado/recriado toda vez que o usuário troca de tela. E por isso os arquivos de fontes externas não devem ser carregados dentro deste arquivo.
+Desta forma, foi criado o arquivo _document.tsx que é carregado somente uma vez, funcionando da mesma forma que o index.html que vem no create-react-app.
+
